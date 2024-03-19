@@ -1,9 +1,18 @@
-Epriv	testing.v	/^enum Epriv/
-Epub	testing.v	/^pub enum Epub/
-Example_private	testing.v	/^struct Example_private/
-Example_public	testing.v	/^pub struct Example_public/
-Privately	testing.v	/^interface Privately/
-Publicly	testing.v	/^pub interface Publicly/
+does_privately	testing_too.v	/^fn does_privately/
+does_publicly	testing_too.v	/^pub fn does_publicly/
 does_stuff_privately	testing.v	/^fn does_stuff_privately/
 does_stuff_publicly	testing.v	/^pub fn does_stuff_publicly/
+E_private	testing_too.v	/^struct E_private/
+E_public	testing_too.v	/^pub struct E_public/
+Epriv	testing.v	/^enum Epriv/
+Epub	testing.v	/^pub enum Epub/
+Ex_priv	testing_too.v	/^enum Ex_priv/
+Ex_pub	testing_too.v	/^pub enum Ex_pub/
+Example_private	testing.v	/^struct Example_private/
+Example_public	testing.v	/^pub struct Example_public/
+Priv	testing_too.v	/^interface Priv/
+Privately	testing.v	/^interface Privately/
+Pub	testing_too.v	/^pub interface Pub/
+Publicly	testing.v	/^pub interface Publicly/
 testing	testing.v	1
+testing_too	testing_too.v	1

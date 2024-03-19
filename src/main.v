@@ -48,7 +48,7 @@ fn main() {
 		treat_file(filename, mut tags)
 	}
 	if tags.len > 0 {
-		tags.sort()
+		tags.sort_ignore_case()
 		mut file := os.create('tags') or {
 			eprintln('Error creating file tags in current directory')
 			return
