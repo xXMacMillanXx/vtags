@@ -1,0 +1,9 @@
+Epriv	src/testing.v	/^enum Epriv/
+Epub	src/testing.v	/^pub enum Epub/
+Example_private	src/testing.v	/^struct Example_private/
+Example_public	src/testing.v	/^pub struct Example_public/
+Privately	src/testing.v	/^interface Privately/
+Publicly	src/testing.v	/^pub interface Publicly/
+does_stuff_privately	src/testing.v	/^fn does_stuff_privately/
+does_stuff_publicly	src/testing.v	/^pub fn does_stuff_publicly/
+testing	src/testing.v	1
