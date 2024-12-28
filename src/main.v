@@ -24,7 +24,7 @@ fn treat_file(filename string, mut tags []string) {
 		return
 	}
 	mut base := os.file_name(filename)
-	pos := base.index_last('.') or { -1 }
+	pos := base.last_index('.') or { -1 }
 	if pos != -1 {
 		base = base[..pos]
 	}
