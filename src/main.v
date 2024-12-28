@@ -43,8 +43,19 @@ fn treat_file(filename string, mut tags []string) {
 
 fn main() {
 	args := os.args[1..]
+	mut files := []string{}
+	if args[0] == '.' {
+		raw_file_list := os.glob('*.v') or {
+			eprintln('Error listing files on pattern "*.v": ${err}')
+			return
+		}
+		files = raw_file_list.clone()
+	} else {
+		files = args.clone()
+	}
+
 	mut tags := []string{}
-	for filename in args {
+	for filename in files {
 		treat_file(filename, mut tags)
 	}
 	if tags.len > 0 {
